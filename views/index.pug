@@ -4,18 +4,20 @@ block content
   // Navigation
   nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
     .container
-      a.navbar-brand.js-scroll-trigger(href='#page-top') Start Bootstrap
+      a.navbar-brand.js-scroll-trigger(href='#page-top') Red Bicicletas
       button.navbar-toggler.navbar-toggler-right(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
         | Menu
         i.fas.fa-bars
       #navbarResponsive.collapse.navbar-collapse
         ul.navbar-nav.ml-auto
           li.nav-item
-            a.nav-link.js-scroll-trigger(href='#about') About
+            a.nav-link.js-scroll-trigger(href='#about') Acerca de
           li.nav-item
-            a.nav-link.js-scroll-trigger(href='#projects') Projects
+            a.nav-link.js-scroll-trigger(href='#projects') Projectos
           li.nav-item
-            a.nav-link.js-scroll-trigger(href='#signup') Contact
+            a.nav-link.js-scroll-trigger(href='#map') Mapa
+          li.nav-item
+            a.nav-link.js-scroll-trigger(href='#signup') Contacto
   // Masthead
   header.masthead
     .container.d-flex.h-100.align-items-center
@@ -70,6 +72,10 @@ block content
                 p.mb-0.text-white-50
                   | Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!
                 hr.d-none.d-lg-block.mb-0.mr-0
+  // Map
+  section#map.map-section
+    .container
+      #mapid
   // Signup
   section#signup.signup-section
     .container
