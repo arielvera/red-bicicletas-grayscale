@@ -1,1 +1,1 @@
-# proyecto de node, express y mongodb
+# proyecto de red bicicletas
