@@ -1,0 +1,20 @@
+extends ../layout
+
+block content
+  br
+  a(href='/bicicletas') Volver a la lista
+  br
+  h1 Nueva bicicleta
+  form.form(action='/bicicletas/create' method='post')
+    div.row
+      div.col-5
+        input#color.form-control.flex-fill.mb-2(type='text' name="color" placeholder='Ingrese color' required)
+      div.col-5
+        input#modelo.form-control.flex-fill.mb-2(type='text' name="modelo" placeholder='Ingrese modelo' required)
+      div.col-5
+        input#lat.form-control.flex-fill.mb-2(type='text' name="lat" placeholder='Ingrese latitud' required)
+      div.col-5
+        input#lon.form-control.flex-fill.mb-2(type='text' name="lon" placeholder='Ingrese longitud' required)
+    br
+    div.row
+      button.btn.btn-primary(type='submit') Guardar

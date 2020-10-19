@@ -1,0 +1,20 @@
+extends ../layout
+
+block content
+  br
+  a(href='/bicicletas') Volver a la lista
+  br
+  h1 Actualizar bicicleta
+  form.form(action=`/bicicletas/${bici.id}/update` method='post')
+    div.row
+      div.col-5
+        input#color.form-control.flex-fill.mb-2(type='text' name="color" placeholder='Ingrese color' value=bici.color required)
+      div.col-5
+        input#modelo.form-control.flex-fill.mb-2(type='text' name="modelo" placeholder='Ingrese modelo' value=bici.modelo required)
+      div.col-5
+        input#lat.form-control.flex-fill.mb-2(type='text' name="lat" placeholder='Ingrese latitud' value=bici.ubicacion[0] required)
+      div.col-5
+        input#lon.form-control.flex-fill.mb-2(type='text' name="lon" placeholder='Ingrese longitud' value=bici.ubicacion[1] required)
+    br
+    div.row
+      button.btn.btn-primary(type='submit') Guardar
