@@ -35,9 +35,9 @@ Bicicleta.findById = function(id) {
     });
 }
 
-var bici1 = new Bicicleta(1, 'rojo', 'raptor', [-132, -145]);
-var bici2 = new Bicicleta(2, 'azul', 'ragnarok', [-1342, -141235]);
-var bici3 = new Bicicleta(3, 'verde', 'predator', [-8996, -1235698]);
+var bici1 = new Bicicleta(1, 'rojo', 'raptor', [-31.4158007,-64.1825873]);
+var bici2 = new Bicicleta(2, 'azul', 'ragnarok', [-31.4153326,-64.1826589]);
+var bici3 = new Bicicleta(3, 'verde', 'predator', [-31.4164758,-64.1834184]);
 
 Bicicleta.bicicletas.push(bici1);
 Bicicleta.bicicletas.push(bici2);
